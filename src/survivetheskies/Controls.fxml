@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="ControlVbox" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="survivetheskies.ControlsControl">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="700.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/res/background1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/res/Controls1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="700.0" layoutX="100.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/res/fin2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btBack" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #256beb; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="FreeSans Bold" size="18.0" />
+               </font>
+            </Button>
+            <Pane layoutX="25.0" layoutY="425.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3366ff; -fx-background-radius: 5;">
+               <children>
+                  <Label lineSpacing="2.0" prefHeight="200.0" prefWidth="200.0" text="W - Accelerates the &#10;plane &#10;A - Rotates plane &#10;left&#10;D - Rotates plane &#10;right &#10;Shift - Fire">
+                     <font>
+                        <Font name="FreeSans Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="250.0" layoutY="425.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+               <children>
+                  <Label prefHeight="200.0" prefWidth="200.0" text="Esc - Close the &#10;game&#10;M - Mute Audio&#10;">
+                     <font>
+                        <Font name="FreeSans Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="475.0" layoutY="425.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #993333; -fx-background-radius: 5;">
+               <children>
+                  <Label prefHeight="200.0" prefWidth="208.0" text="Up Key - Accelerates&#10;the plane &#10;Left Key - Rotates &#10;plane left&#10;Right Key - Rotates &#10;plane right &#10;Spacebar - Fire">
+                     <font>
+                        <Font name="FreeSans Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
