@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="MainMenuVbox" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="survivetheskies.MainMenuControl">
+  <children>
+    <AnchorPane fx:id="apLogoBack" maxHeight="-1.0" maxWidth="-1.0" prefHeight="700.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="ivBack" fitHeight="700.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/res/background1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivLogo" fitHeight="200.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/res/Logo3.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="vbButtons" alignment="CENTER" layoutX="144.0" layoutY="200.0" prefHeight="500.0" prefWidth="412.0" spacing="50.0">
+               <children>
+                  <Button fx:id="btPlay" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #256beb; -fx-background-radius: 100;" text="Play" textAlignment="CENTER">
+                     <font>
+                        <Font name="FreeSans Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btHow" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #b23c3c; -fx-background-radius: 100;" text="How To Play" textAlignment="CENTER">
+                     <font>
+                        <Font name="FreeSans Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btControl" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #256beb; -fx-background-radius: 100;" text="Controls" textAlignment="CENTER">
+                     <font>
+                        <Font name="FreeSans Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btExit" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #b23c3c; -fx-background-radius: 100;" text="Exit" textAlignment="CENTER">
+                     <font>
+                        <Font name="FreeSans Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            
+            <ImageView fx:id="ivAudioOff" fitHeight="50.0" fitWidth="50.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true" >
+               <image>
+                  <Image url="/res/Mute.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivAudioOn" fitHeight="50.0" fitWidth="50.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="/res/Audio Play.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btAudio" layoutY="650.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="50.0" text="ToggleButton" textFill="TRANSPARENT" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
